@@ -95,7 +95,7 @@ public class Lista {
         }else{
             ultimo = ultimo - 1;
             int primeiro = item[0];
-            for(int i = 0; i < utimo - 1; i++){
+            for(int i = 0; i < ultimo - 1; i++){
                 item[i] = item[i + 1];
             }
             return primeiro;
