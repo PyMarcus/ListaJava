@@ -69,7 +69,8 @@ public class Lista {
                 }
             }
             if(v){
-                for(int i = 0; i < item.length - 1; i++){
+                ultimo = ultimo - 1;
+                for(int i = 0; i < ultimo - 1; i++){
                     if(item[i] == chave ){
                        continue;
                     }else{
@@ -92,8 +93,9 @@ public class Lista {
             System.out.println("Lista vazia, nada a alterar");
             return 0;
         }else{
+            ultimo = ultimo - 1;
             int primeiro = item[0];
-            for(int i = 0; i < item.length - 1; i++){
+            for(int i = 0; i < utimo - 1; i++){
                 item[i] = item[i + 1];
             }
             return primeiro;
